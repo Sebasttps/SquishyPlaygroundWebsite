@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Squishy Playground</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Squishy Playground</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Party Themes.html">Party Themes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Book Now.html">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Gallery Section -->
+        <section>
+            <h1 class="text-center mb-4">Gallery</h1>
+            
+            <!-- Images Section -->
+            <div class="row text-center mb-5">
+                <!-- Fairy Party Image -->
+                <div class="col-md-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fairyModal">
+                        <img src="fairy-party.jpeg" class="img-fluid rounded mb-3" alt="Fairy Party">
+                    </a>
+                    <p>A magical fairy-themed party in action.</p>
+                </div>
+                <!-- Pirate Party Image -->
+                <div class="col-md-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#pirateModal">
+                        <img src="pirate_party_decor_12.jpg" class="img-fluid rounded mb-3" alt="Pirate Party">
+                    </a>
+                    <p>Exciting pirate-themed adventures for kids.</p>
+                </div>
+                <!-- Space Party Image -->
+                <div class="col-md-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#spaceModal">
+                        <img src="SPACE PARTY.jpeg" class="img-fluid rounded mb-3" alt="Space Party">
+                    </a>
+                    <p>Out-of-this-world fun with a space theme.</p>
+                </div>
+            </div>
+
+            <!-- Videos Section -->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <video class="img-fluid rounded mb-3" controls>
+                        <source src="Fairy Party.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Highlights from a magical fairy party.</p>
+                </div>
+                <div class="col-md-4">
+                    <video class="img-fluid rounded mb-3" controls>
+                        <source src="Pirate Party.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Exciting pirate adventures in action.</p>
+                </div>
+                <div class="col-md-4">
+                    <video class="img-fluid rounded mb-3" controls>
+                        <source src="Space Party.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Fun moments from a space-themed party.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals Section -->
+        <!-- Fairy Party Modal -->
+        <div class="modal fade" id="fairyModal" tabindex="-1" aria-labelledby="fairyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="fairy-party.jpeg" class="img-fluid" alt="Fairy Party">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pirate Party Modal -->
+        <div class="modal fade" id="pirateModal" tabindex="-1" aria-labelledby="pirateModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="pirate_party_decor_12.jpg" class="img-fluid" alt="Pirate Party">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Space Party Modal -->
+        <div class="modal fade" id="spaceModal" tabindex="-1" aria-labelledby="spaceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="SPACE PARTY.jpeg" class="img-fluid" alt="Space Party">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Squishy Playground. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
